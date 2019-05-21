@@ -22,20 +22,33 @@
 		div.package {
 		  font-size: 16px;
 		  color: rgba(79,108,142,1);
-		  border-bottom: 5px solid rgba(215,227,241,1);
+		  border-bottom: 3px solid rgba(215,227,241,1);
 		  padding: 20px;
 		  width: 100%;
 		}		
-</style>
+    </style>
   </head>
   <body>
 	<h1>CeR Python Package Index</h1>
 	<section class="explanation">
-		<p>This is a CeR Python repository server that conforms to the <a href="(https://www.python.org/dev/peps/pep-0503/">Pep 503 specification</a>.</a></p>
-		<p>This file isn't used by pip (at least in my version), although the <a href="https://www.python.org/dev/peps/pep-0503/">specification</a> states that it is.
-		   It is still useful from a discoverability point of view though, and future versions of Pip may require it.</p>
-		<p>Pip will look for directories using the normalised name of your package ('ceradmin-common' in this case instead of 'ceradmin_common').
-		   More details in the <a href="https://www.python.org/dev/peps/pep-0503/#normalized-names">specification</a>.</p>
+		<p>
+		   This is a CeR Python repository server that conforms to the <a href="(https://www.python.org/dev/peps/pep-0503/">Pep 503 specification</a>.
+		</p>
+		<p>
+		   Pip will look for directories using the normalised name of your package ('ceradmin-common' in this case instead of 'ceradmin_common').
+		   More details in the <a href="https://www.python.org/dev/peps/pep-0503/#normalized-names">specification</a>.
+		</p>
+		<p>To install a package or a dependency from here:</p>
+		<p>Using <b>pip</b>:<br>
+		   <code>pip install ceradmin_ingest --extra-index-url https://uoa-eresearch.github.io/python_package_server/</code>
+		</p>
+		<p>Using <b>setup.py</b>:<br>
+		   <code>install_requires=['ceradmin_common'],<br>
+		         dependency_links=['git+https://github.com/UoA-eResearch/ceradmin_common#egg=ceradmin_common-0.0.1']</code>
+		</p>
+		<p>
+		  More information about package versions will come soon.
+		</p>
 	</section>
 	<div class="package" >
 		<a href="ceradmin-common/">ceradmin_common</a>
