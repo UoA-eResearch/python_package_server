@@ -32,22 +32,35 @@
 	<h1>CeR Python Package Index</h1>
 	<section class="explanation">
 		<p>
-		   This is a CeR Python repository server that conforms to the <a href="(https://www.python.org/dev/peps/pep-0503/">Pep 503 specification</a>.
+			This is a CeR Python repository server that conforms to the 
+			<a href="(https://www.python.org/dev/peps/pep-0503/">Pep 503 specification</a>.
 		</p>
 		<p>
-		   Pip will look for directories using the normalised name of your package ('ceradmin-common' in this case instead of 'ceradmin_common').
-		   More details in the <a href="https://www.python.org/dev/peps/pep-0503/#normalized-names">specification</a>.
-		</p>
-		<p>To install a package or a dependency from here:</p>
-		<p>Using <b>pip</b>:<br>
-		   <code>pip install ceradmin_ingest --extra-index-url https://uoa-eresearch.github.io/python_package_server/</code>
-		</p>
-		<p>Using <b>setup.py</b>:<br>
-		   <code>install_requires=['ceradmin_common'],<br>
-		         dependency_links=['git+https://github.com/UoA-eResearch/ceradmin_common#egg=ceradmin_common-0.0.1']</code>
+			Pip will look for directories using the normalised name of your package 
+			('ceradmin-common' in this case instead of 'ceradmin_common'). More details in 
+			the <a href="https://www.python.org/dev/peps/pep-0503/#normalized-names">specification</a>.
 		</p>
 		<p>
-		  More information about package versions will come soon.
+			To install a package or a dependency from here:
+		</p>
+		<p>
+			Using <b>pip</b>:<br>
+			<code>pip install ceradmin_ingest --extra-index-url https://uoa-eresearch.github.io/python_package_server/</code>
+		</p>
+		<p>
+			Using <b>setup.py</b>:<br>
+			<code>
+				install_requires=['ceradmin_common'],<br>
+				dependency_links=['git+https://github.com/UoA-eResearch/ceradmin_common#egg=ceradmin_common-0.0.1']
+			</code>
+		</p>
+		<p>
+			<b>Note</b>: Some repositories might be private. You'll be asked for your github
+			credentials during the installation. The installation will fail if you are not authorized
+			to access the repository.
+		</p>
+		<p>
+			More information about package versions will come soon.
 		</p>
 	</section>
 	<div class="package" >
